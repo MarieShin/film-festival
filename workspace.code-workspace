@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "..\\green.html5.css3"
+		},
+		{
+			"name": "green.frontend3",
+			"path": "..\\green.frontend3"
+		},
+		{
+			"path": "..\\..\\Users\\202-3\\Downloads\\swiper-Swiper5"
+		},
+		{
+			"path": "..\\..\\Users\\202-3\\Downloads\\slick-master\\slick-master"
+		},
+		{
+			"path": "..\\..\\Users\\202-3\\Downloads\\fullPage.js-master\\fullPage.js-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "green.html5.css3"
+	}
+}
