@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* 컨텐츠 */
+
+/* 이미지들 */
+#content_films {
+      height: 700px;
+      background-color: #333;
+}
+
+#content_films > h3 {
+      font-size: 30px;
+      color: white;
+}
+
+
+/* 공지사항, 뉴스 */
+#content_text {
+      width: 1040px;
+      margin: 0 auto;
+      padding: 50px 0;
+      overflow: hidden;
+}
+
+#content_text > .container_notice {
+      float: left;
+      width: calc(50% - 25px);
+      height: auto;
+      margin-right: 50px;
+}
+#content_text > .container_news {
+      float: left;
+      width: calc(50% - 25px);
+      height: auto;
+}
+
+#content_text h3 {
+      font-size: 20px;
+      margin-bottom: 30px;
+}
+
+/* 공지사항 */
+#content_text > .container_notice > .notice_item {
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+}
+
+#content_text > .container_notice > .notice_item:last-of-type {
+      border: none;
+}
+
+#content_text > .container_notice > .notice_item > .date {
+      float: left; 
+      width: 80px;
+      margin-right: 15px;
+}
+
+#content_text > .container_notice > .notice_item > .date > p:first-child {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 600;
+}
+
+#content_text > .container_notice > .notice_item > .date > p:nth-child(2) {
+      font-size: 16px;
+      text-align: center;
+      padding-top: 10px;
+}
+
+#content_text > .container_notice > .notice_item > .post {
+      float: left; 
+      width: calc(100% - 95px);
+      padding-top: 10px;
+}
+
+#content_text > .container_notice > .notice_item > .post > p:first-child {
+      font-size: 18px;
+      font-weight: 400;
+}
+
+#content_text > .container_notice > .notice_item > .post > p:nth-child(2) {
+      font-size: 15px;
+      color: #999;
+      padding-top: 10px;
+}
+
+/* 뉴스 */
+#content_text > .container_news > .news_item {
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+}
+
+#content_text > .container_news > .news_item:last-of-type {
+      border: none;
+}
+
+#content_text > .container_news > .news_item > .date {
+      float: left; 
+      width: 80px;
+      margin-right: 15px;
+}
+
+#content_text > .container_news > .news_item > .date > p:first-child {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 600;
+}
+
+#content_text > .container_news > .news_item > .date > p:nth-child(2) {
+      font-size: 16px;
+      text-align: center;
+      padding-top: 10px;
+}
+
+#content_text > .container_news > .news_item > .post {
+      float: left; 
+      width: calc(100% - 95px);
+      padding-top: 10px;
+}
+
+#content_text > .container_news > .news_item > .post > p:first-child {
+      font-size: 18px;
+}
+
+#content_text > .container_news > .news_item > .post > p:nth-child(2) {
+      font-size: 15px;
+      color: #999;
+      padding-top: 10px;
+}
+
