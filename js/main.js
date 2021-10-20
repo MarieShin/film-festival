@@ -1,5 +1,5 @@
 // library Swiper
-var swiper = new Swiper('.big_slider', {
+var swiper_big = new Swiper('.big_slider', {
       pagination: {
             el: '.swiper-pagination',
       },
@@ -8,7 +8,7 @@ var swiper = new Swiper('.big_slider', {
       },
       speed: 800
 });
-var swiper = new Swiper('.small_slider', {
+var swiper_small = new Swiper('.small_slider', {
       slidesPerView: 3,
       spaceBetween: 30,
       navigation: {
