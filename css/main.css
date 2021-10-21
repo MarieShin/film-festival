@@ -192,61 +192,98 @@
 /* 이미지들 */
 #content_films {
       width: 100%;
-      height: 700px;
+      height: auto;
       background-color: #333;
       color: white;
       overflow: hidden;
 }
 
 #content_films > h3 {
-      font-size: 30px;
+      font-size: 35px;
       color: white;
+      padding: 20px 20px 0;
 }
 
-#content_films div.film1 {
-      width: 50%;
-      float: left;
+#content_films > .films_container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      margin: 30px 30px 50px;
 }
-#content_films div.film2 {
-      width: 33.3%;
-      float: left;
-      padding: 0 13px;
+
+#content_films > .films_container > .left-row {
+      flex: 40%;
+} 
+#content_films > .films_container > .left-row > .film1 {
+      width: 95%;
 }
-#content_films div.film3 {
-      width: 33.3%;
-      padding: 0 13px;
-      float: left;
+
+#content_films > .films_container > .right-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex: 60%;
 }
-#content_films div.film4 {
-      width: 33.3%;
-      padding: 0 13px;
-      float: left;
-      clear: left;
-      margin-top: 25%;
+
+#content_films > .films_container > .right-row .film {
+      width: 31%;
+      /* padding-bottom: 32%; */
+      margin-bottom: -1.5%;
+      position: relative;
 }
-#content_films div.film5 {
-      width: 33.3%;
-      padding: 0 13px;
-      float: left;
-      margin-top: -6%;
+
+#content_films > .films_container > .right-row .hidden .bg-img {
+      visibility: hidden;
 }
-#content_films div.film6 {
-      width: 33.3%;
-      padding: 0 13px;
-      margin-top: 25%;
-      float: left;
+
+#content_films > .films_container > .right-row > .film3 .film-caption, .film4 .film-caption {
+      position: absolute;
+      top: 0;
+      right: -130px; 
 }
+
 #content_films .bg-img {
       width: 100%;
       border-radius: 15px;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center center;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
 }
 
-#content_films .film-caption {
-
+#content_films .film {
+      overflow: hidden;
 }
+
+#content_films .bg-img:hover, .bg-img:focus {
+      -ms-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+}
+#content_films .film:hover .bg-img::before, .film:focus .bg-img::before {
+      display: block;
+}
+
+#content_films .film-caption > h4 {
+      padding-top: 5px;
+      font-size: 22px;
+}
+
+#content_films .film-caption > h5 {
+      font-size: 16px;
+      color: #9ed5d2;
+      padding-top: 5px;
+}
+
+#content_films > .films_container > .right-row > .film5, .film6 {
+      margin-top: -20px;   
+}
+
 
 
 /* 공지사항, 뉴스 */
@@ -367,3 +404,65 @@
       padding-top: 10px;
 }
 
+
+
+
+/* 미디어 쿼리 */
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) {
+      
+} 
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+      
+}
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+      #content_films > h3 {
+            font-size:25px;
+            color: white;
+            padding: 20px 20px 0;
+      }
+      
+      #content_films > .films_container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 20px 30px;
+      }
+      
+      #content_films > .films_container > .left-row {
+            flex: 40%;
+            margin-bottom: 30px;
+      } 
+      #content_films > .films_container > .left-row > .film1 {
+            width: 100%;
+      }
+      
+      #content_films > .films_container > .right-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex: 60%;
+      }
+      
+      #content_films > .films_container > .right-row .film {
+            width: 48%;
+            margin-bottom: 5%;
+            position: relative;
+      }
+      
+      #content_films > .films_container > .right-row .hidden {
+            display: none;
+      }
+
+      #content_films > .films_container > .right-row > .film3 .film-caption, .film4 .film-caption {
+            position: relative;
+            bottom: 0;
+            left: 0;
+      }
+
+      #content_films > .films_container > .right-row > .film5, .film6 {
+            margin: 0;
+      }
+}
