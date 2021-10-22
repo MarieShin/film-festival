@@ -10,9 +10,6 @@
 /* a { text-decoration: none; } */
 img { border: 0; }
 ul { list-style: none; }
-body {
-      background-color: #e9e9e9;
-}
 
 
 /* 헤더 */
@@ -20,7 +17,7 @@ body {
 #main_header {
       width: 100%;
       height: 80px;
-      background-color: rgba(0,0,0,.60);
+      background-color: #333;
       color: #fff;
       position: fixed;
       z-index: 10;
@@ -39,24 +36,34 @@ body {
 }
 
 #main_header > .gnb_container > .gnb {
-      float: right;
+      float: left;
 }
 #main_header > .gnb_container > .gnb > ul {
       overflow: hidden;
-      margin-top: 30px;
-      margin-right: 5px;
+      line-height: 80px;
+      padding: 0 15px;
 }
 #main_header > .gnb_container > .gnb > ul > li {
       float: left;
-      padding-right: 15px;
+      padding: 0 15px;
 }
 #main_header > .gnb_container > .gnb > ul > li > a {
       color: white;
+      text-decoration: none;
       font-size: 18px;
 }
 
 #main_header > .gnb_container > .trigger {
+      float: right;
+      width: 30px;
+      text-align: right;
+      padding-top: 20px;
+      padding-right: 10px;
       display : none;
+}
+
+#main_header > .gnb_container > .trigger .close {
+      display: none;
 }
 
 /* 푸터 */
@@ -88,4 +95,14 @@ body {
       width: 100%;
       height: 100px;
       background-color: #999;
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+      #main_header > .gnb_container > .gnb {
+            display : none;
+      }
+      #main_header > .gnb_container > .trigger {
+            display : block;
+      }
 }

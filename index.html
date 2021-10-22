@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="css/common.css">
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="library/swiper.css">
-      <link rel="stylesheet" href="library/animate.css">
+      <link rel="stylesheet" href="library/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 <body>
       <!-- 상단바(공통) -->
@@ -19,15 +19,15 @@
                   </div>
                   <div class="gnb"> 
                         <ul>
-                              <li><a href="#">부산국제영화제</a></li>
+                              <li><a href="pages/announce.html">부산국제영화제</a></li>
                               <li><a href="#">프로그램</a></li>
                               <li><a href="#">가이드</a></li>
                               <li><a href="#">이벤트</a></li>
                         </ul>
                   </div>
                   <div class="trigger">
-                        <a href="#">메뉴버튼</a>
-                        <a href="#">닫기버튼</a>
+                        <a href="#" class="mobile hamburger" style="color: white;"><i class="fas fa-bars fa-lg"></i></a>
+                        <a href="#" class="mobile close" style="color: white;"><i class="fas fa-times fa-lg"></i></a>
                   </div>
             </nav>
       </header>
@@ -51,18 +51,9 @@
                   <p>더보기+</p>
             </div>
             <div id="event_container">
-                  <div class="event_item">
-                        <p>개막식</p>
-                        <p>2021.10.06</p> 
-                  </div>
-                  <div class="event_item">
-                        <p>야외 무대인사</p>
-                        <p>2021.10.06 ~ 10.15</p> 
-                  </div>
-                  <div class="event_item">
-                        <p>폐막식</p>
-                        <p>2021.10.15</p> 
-                  </div>
+                  <img class="event_item" src="./images/event_open_bg.png">
+                  <img class="event_item" src="./images/event_item.png">
+                  <img class="event_item" src="./images/event_close_bg.png">
             </div>
       </section>
       <!-- 슬라이더 (작은 이미지) -->
@@ -81,32 +72,36 @@
                   <div class="swiper-button-prev swiper-button-black"></div>
             </div>
       </section>
-      <!-- 컨텐츠 이미지들 -->
+      <!-- 이미지 갤러리 -->
       <section id="content_films">
             <h3>Films</h3>
             <div class="films_container">
-                  <div class="left-row">
-                        <div class="film film1">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
-                              <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>개막작</h5>
-                              </div>
+                  <div class="left-row film film1">
+                        <div class="bg">
+                              <img class="bg-img" src="./images/film_img1.png" alt="">
+                        </div>
+                        <div class="film-caption">
+                              <h4>나는 감독이다</h4>
+                              <h5>개막작</h5>
                         </div>
                   </div>
                   <div class="right-row">
                         <div class="film film2">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/film_img5.png" alt="">
+                              </div>
                               <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>Lorem ipsum</h5>
+                                    <h4>유람선</h4>
+                                    <h5>바비 브라운</h5>
                               </div>
                         </div>
                         <div class="film film3">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/film_img6.png" alt="">
+                              </div>
                               <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>Lorem ipsum</h5>
+                                    <h4>즐거운 저녁이여</h4>
+                                    <h5>월드시네마</h5>
                               </div>
                         </div>
                         <div class="film hidden">
@@ -114,20 +109,26 @@
                                     <h4>Lorem ipsum</h4>
                                     <h5>Lorem ipsum</h5>
                               </div>
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              </div>
                         </div>
                         <div class="film hidden">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              </div>
                               <div class="film-caption">
                                     <h4></h4>
                                     <h5></h5>
                               </div>
                         </div>
                         <div class="film film4">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/film_img4.png" alt="">
+                              </div>
                               <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>Lorem ipsum</h5>
+                                    <h4>남자들의 대화</h4>
+                                    <h5>홍콩 시네마</h5>
                               </div>
                         </div>
                         <div class="film hidden">
@@ -135,27 +136,35 @@
                                     <h4>Lorem ipsum</h4>
                                     <h5>Lorem ipsum</h5>
                               </div>
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              </div>
                         </div>
                         <div class="film film5">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/film_img7.png" alt="">
+                              </div>
                               <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>Lorem ipsum</h5>
+                                    <h4>미국의 아침</h4>
+                                    <h5>조나 킴</h5>
                               </div>
                         </div>
                         <div class="film hidden">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              </div>
                               <div class="film-caption">
                                     <h4></h4>
                                     <h5></h5>
                               </div>
                         </div>
                         <div class="film film6">
-                              <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/film_img8.png" alt="">
+                              </div>
                               <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>Lorem ipsum</h5>
+                                    <h4>두유 노우 코비드</h4>
+                                    <h5>월드시네마</h5>
                               </div>
                         </div>
                   </div>

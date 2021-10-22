@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+      background-color: #fff;
+}
+
+/* 메뉴 */
+#wrap {
+      width: 960px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding-top: 80px;
+      /* margin: 0 30px 50px; */
+}
+
+#main_aside {
+      float: left;
+      width: 200px;
+      padding-top: 70px;
+      border-right: 1px solid #bbb;
+}
+
+#main_aside > ul > li {
+      margin-bottom: 30px;
+}
+
+#main_aside > ul > li > a {
+      color: #222;
+      text-decoration: none;
+      font-size: 25px;
+      padding: 50px 0 30px;
+      text-align: right;
+      font-weight: 600;
+}
+
+/* 컨텐츠 - 소개 */
+
+#content_announce {
+      float: left;
+      width: 630px;
+      padding-top: 70px;
+      margin-left: 30px;
+}
+
+#content_poster, #content_winner, #content_patner {
+      display: none;
+}
+
+/* 컨텐츠 - 포스터 */
+
+/* 컨텐츠 - 심사위원&시상 */
+
+/* 컨텐츠 - 파트너 */
