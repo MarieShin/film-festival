@@ -2,34 +2,129 @@
 
 body {
     background: #fff;
+    color: #222;
 }
 
 #wrap {
-    width: 960PX;
+    width: 960px;
     margin: 0 auto;
     padding-top: 140px;
+    padding-bottom: 100px;
 }
 
+/* 오늘의 상영작, 상영 예정작 */
 .content_program, .content_program_t {
     overflow: hidden;
 }
 
 .content_program h3 , .content_program_t h3 {
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 600;
     padding: 30px 0;
 }
 
-.content_program .film.item, .content_program_t .film.item {
+.program_container > .film.item {
     float: left;
     width: calc((100% - 60px) / 4);
     margin-right: 15px;
     margin-bottom: 40px;
 }
-.film.item:last-of-type {
+.program_container > .film.item:last-child {
     margin-right: 0;
 }
 
-img {
+.program_container > .film.item > .bg > img {
     width: 100%;
     border-radius: 15px;
+}
+
+.program_container > .film.item > .caption {
+    padding-top: 5px;
+}
+
+.program_container > .film.item > .caption > h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.program_container > .film.item > .caption > h5 {
+    font-size: 18px;
+    padding-top: 5px;
+    color: #444;
+}
+
+
+
+/* 미디어 쿼리 */
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) { 
+
+} 
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    #wrap {
+        width: 100%;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .content_program, .content_program_t {
+        margin: 30px;
+    }
+
+    .content_program h3 , .content_program_t h3 {
+        font-size: 20px;
+    }
+
+    .program_container > .film.item {
+        width: calc((100% - 40px) / 3);
+        margin-right: 20px;
+    }
+    .program_container > .film.item:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    .program_container > .film.item > .caption > h4 {
+        font-size: 18px;
+    }
+    
+    .program_container> .film.item > .caption > h5 {
+        font-size: 16px;
+    }
+
+} 
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) { 
+    #wrap {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .content_program, .content_program_t {
+        margin: 20px;
+    }
+
+    .content_program h3 , .content_program_t h3 {
+        font-size: 18px;
+    }
+
+    .program_container > .film.item {
+        width: calc((100% - 20px) / 2);
+        margin-right: 20px;
+    }
+
+    .program_container > .film.item:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    .program_container > .film.item > .caption > h4 {
+        font-size: 16px;
+    }
+    
+    .program_container> .film.item > .caption > h5 {
+        font-size: 14px;
+    }
 }

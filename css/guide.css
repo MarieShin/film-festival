@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main_aside {
+    padding: 120px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#main_aside > ul {
+    overflow: hidden;
+    text-align: center;    
+}
+
+#main_aside > ul > li {
+    /* float: left; */
+    text-align: center;
+    display: inline-block;
+}
+
+#main_aside > ul > li > a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    padding-right: 80px;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/* 개 폐막식 안내 */
+#wrap > .content_open_close > .op_cl_container {
+    padding: 30px 10px;
+}
+
+#wrap > .content_open_close > h1 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#wrap > .content_open_close > .op_cl_container h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#wrap > .content_open_close > .op_cl_container p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+#wrap > .content_open_close > .op_cl_container table {
+    width: 100%;
+    border: 1px solid #444;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+#wrap > .content_open_close > .op_cl_container th,td {
+    border: 1px solid #444;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* 지도 */
+#wrap > .map {
+    display: none;
+}

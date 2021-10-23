@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>부산국제영화제</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <link rel="stylesheet" href="../library/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 <body>
     <!-- 상단바(공통) -->
@@ -28,6 +30,60 @@
             </div>
         </nav>
     </header>
+    <!-- 메뉴 -->
+    <aside id="main_aside">
+        <ul>
+            <li class="guide gnb"><a href="#">개폐막식 안내</a></li>
+            <li class="guide gnb"><a href="#">지도</a></li>
+        </ul>
+    </aside>
+    <div id="wrap">
+        <!-- 개 폐막식 안내 -->
+        <section class="content_open_close">
+            <h1>개폐막식 안내</h1>
+            <div class="op_cl_container">
+                <div>
+                    <h5>개폐막식 참석안내</h5>
+                    <p>
+                        - 코로나로 인해 좌석 간 거리두기가 실시되오니 양해 부탁드립니다.<br />
+                        - 코로나로 인해 음식물은 반입이 불가합니다.(물 제외)<br />
+                        - 영화 상영 시 사진 및 촬영이 불가합니다.<br />
+                        - 반드시 지정된 좌석에 착석 바랍니다.
+                    </p>
+                </div>
+                <div>
+                    <h5>개막식 타임테이블</h5>
+                    <table id="table_open_time">
+                        <tr>
+                            <th>시간</th>
+                            <th>구분</th>
+                        </tr>
+                        <tr>
+                            <td>17:00 ~ 18:00</td>
+                            <td>관객/게스트 입장</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 ~ 19:00</td>
+                            <td>레드카펫 행사</td>
+                        </tr>
+                        <tr>
+                            <td>19:10 ~ 20:00</td>
+                            <td>공식 행사</td>
+                        </tr>
+                        <tr>
+                            <td>20:00 ~ 21:40</td>
+                            <td>개막식 상영</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- 지도 -->
+        <section class="map">
+            <h1>지도</h1>
+            <div class="map_container"></div>
+        </section>
+    </div>
     <!-- 스폰서 -->
     <section id="main_sponser">
         스폰서
@@ -49,5 +105,6 @@
     </footer>
 <script src="../library/jquery-3.6.0.min.js"></script>
 <script src="../js/common.js"></script>
+<script src="../js/guide.js"></script>
 </body>
 </html>
