@@ -4,50 +4,274 @@ body {
       background-color: #fff;
 }
 
-/* 메뉴 */
-#wrap {
-      width: 960px;
-      margin: 0 auto;
-      overflow: hidden;
-      padding-top: 80px;
-      /* margin: 0 30px 50px; */
+a {
+      text-decoration: none;
 }
 
+/* 메뉴 */
+#wrap {
+      /* width: 1040px; */
+      /* margin: 0 auto; */
+      overflow: hidden;
+      padding-top: 80px;
+      /* margin-bottom: 60px; */
+      margin: 0 30px 60px;
+}
+
+#wrap > .border {
+      float: left;
+      width: 1px;
+      height: 100%;
+      background-color: #ccc;
+}
+ 
 #main_aside {
       float: left;
       width: 200px;
       padding-top: 70px;
-      border-right: 1px solid #bbb;
+      /* border-right: 1px solid #bbb; */
+      height: inherit;
 }
 
 #main_aside > ul > li {
       margin-bottom: 30px;
+      text-align: right;
+      margin-right: 30px;
 }
 
-#main_aside > ul > li > a {
+/* #main_aside > ul > .current {
       color: #222;
-      text-decoration: none;
-      font-size: 25px;
-      padding: 50px 0 30px;
-      text-align: right;
+} */
+
+#main_aside > ul > li > a {
+      font-size: 23px;
+      padding: 30px 0;
       font-weight: 600;
+      width: 100px;
+      color: #999;
 }
+
+#main_aside > ul > li:hover > a {
+      color: #222;
+}
+
 
 /* 컨텐츠 - 소개 */
 
 #content_announce {
       float: left;
-      width: 630px;
+      width: calc(100% - 251px);
+      /* width: 630px; */
       padding-top: 70px;
-      margin-left: 30px;
+      margin-left: 50px;
 }
 
-#content_poster, #content_winner, #content_patner {
+#content_announce > h1 {
+      font-size: 30px;
+}
+
+#content_poster, #content_winner, #content_partner {
       display: none;
 }
 
+#content_announce > .announce-table {
+      width: 100%;
+      border-top: 1px solid #444;
+      /* border-collapse: collapse; */
+      margin: 50px 0;
+}
+
+#content_announce > .announce-table th, td {
+      border-bottom: 1px solid #444;
+      padding: 10px;
+      font-size: 18px;
+}
+
 /* 컨텐츠 - 포스터 */
+#content_poster {
+      float: left;
+      width: calc(100% - 251px);
+      padding-top: 70px;
+      margin-left: 50px;
+}
+
+#content_poster > h1 {
+      font-size: 30px;
+      margin-bottom: 50px;
+}
+
+#content_poster > .poster_container > .poster_text {
+      border: 1px solid #ccc;
+      font-size: 18px;
+      margin-top: 20px;
+      padding: 10px;
+}
+
+#content_poster > .poster_container > .poster_text > p:first-child {
+      color: #b93b3b;
+      padding-bottom: 15px;
+}
+
 
 /* 컨텐츠 - 심사위원&시상 */
+#content_winner {
+      float: left;
+      width: calc(100% - 251px);
+      padding-top: 70px;
+      margin-left: 50px;
+      overflow: hidden;
+}
+
+#content_winner > h1 {
+      font-size: 30px;
+      margin-bottom: 50px;
+}
+
+#content_winner .winner.item {
+      float: left;
+      width: calc((100% - 30px) / 3);
+      margin-bottom: 50px;
+      padding-right: 10px;
+}
+
+#content_winner .winner.item > img {
+      width: 100%;
+      border-radius: 15px;
+}
+
+#content_winner .winner.item > h5 {
+      font-size: 20px;
+      padding-top: 5px;
+}
 
 /* 컨텐츠 - 파트너 */
+#content_partner {
+      float: left;
+      width: calc(100% - 251px);
+      padding-top: 70px;
+      margin-left: 50px;
+      overflow: hidden;
+}
+
+#content_partner > h1 {
+      font-size: 30px;
+      margin-bottom: 50px;
+}
+
+#content_partner > .partner_container > img {
+      float: left;
+      padding-right: 10px;
+      width: calc((100% - 30px) / 3);
+      margin-bottom: 50px;
+
+}
+
+
+/* 미디어 쿼리 */
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) {
+      
+} 
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+      /* 메뉴 */
+      #main_aside {
+            float: none;
+            width: 100%;
+            padding-top: 30px;
+      }
+
+      #main_aside > ul {
+            overflow: hidden;
+      }
+
+      #main_aside > ul > li {
+            float: left;
+            text-align: center;
+      }
+
+      #main_aside > ul > li > a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            color: #999;
+      }
+
+      /* 컨텐츠 - 소개 */
+      #content_announce {
+            float: none;
+            width: 100%;
+            padding: 30px 0;
+            margin-left: 0;
+      }
+
+      #content_announce > h1 {
+            font-size: 23px;
+      }
+      
+      #content_announce > .announce-table th, td {
+            font-size: 16px;
+      }
+
+      /* 컨텐츠 - 포스터 */
+      #content_poster {
+            float: none;
+            width: 100%;
+            padding-top: 30px;
+            margin-left: 0px;
+      }
+
+      #content_poster > h1 {
+            font-size: 23px;
+      }
+
+      #content_poster > .poster_container > .poster_text {
+            font-size: 16px;
+      }
+
+
+      /* 컨텐츠 - 심사위원&시상 */
+      #content_winner {
+            float: none;
+            width: 100%;
+            padding-top: 30px;
+            margin-left: 0;
+            overflow: hidden;
+      }
+
+      #content_winner > h1 {
+            font-size: 23px;
+      }
+
+      #content_winner .winner.item {
+            float: left;
+            width: calc((100% - 20px) / 2);
+      }
+
+      #content_winner .winner.item > h5 {
+            font-size: 18px;
+      }
+
+      /* 컨텐츠 - 파트너 */
+      #content_partner {
+            float: none;
+            width: 100%;
+            padding-top: 30px;
+            margin-left: 0;
+            overflow: hidden;
+      }
+
+      #content_partner > h1 {
+            font-size: 23px;
+      }
+
+      #content_partner > .partner_container > img {
+            float: left;
+            padding-right: 10px;
+            width: calc((100% - 20px) / 2);
+      }
+}

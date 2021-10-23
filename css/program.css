@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background: #fff;
+}
+
+#wrap {
+    width: 960PX;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+
+.content_program, .content_program_t {
+    overflow: hidden;
+}
+
+.content_program h3 , .content_program_t h3 {
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+.content_program .film.item, .content_program_t .film.item {
+    float: left;
+    width: calc((100% - 60px) / 4);
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+.film.item:last-of-type {
+    margin-right: 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}

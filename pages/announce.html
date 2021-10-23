@@ -34,23 +34,104 @@
       <div id="wrap">
             <aside id="main_aside">
                   <ul>
-                        <li><a href="#">소개</a></li>
-                        <li><a href="#">포스터</a></li>
-                        <li><a href="#">심사위원&시상</a></li>
-                        <li><a href="#">파트너</a></li>
+                        <li class="side menu on"><a href="#">소개</a></li>
+                        <li class="side menu on"><a href="#">포스터</a></li>
+                        <li class="side menu on"><a href="#">심사위원&시상</a></li>
+                        <li class="side menu on"><a href="#">파트너</a></li>
                   </ul>
             </aside>
+            <div class="border"></div>
             <!-- 컨텐츠 - 소개 -->
             <section id="content_announce">
                   <h1>행사소개</h1>
-                  <div></div>
+                  <table class="announce-table">
+                        <tr>
+                              <th>개최기간</th>
+                              <td>2021년 10월 6일(수) - 15일(금)</td>
+                        </tr>
+                        <tr>
+                              <th>상영관</th>
+                              <td>6개의 극장 29개 스크린<br/>CGV, 롯데시네마, 메가박스 등</td>
+                        </tr>
+                        <tr>
+                              <th>상영작</th>
+                              <td>공식 선정작 60개국 210편<br/>커뮤니티버프 상영작 62편</td>
+                        </tr>
+                        <tr>
+                              <th>주요행사</th>
+                              <td>오픈토크<br/>스페셜토크<br/>야외무대인사<br/>핸드프린팅</td>
+                        </tr>
+                        <tr>
+                              <th>개최형식</th>
+                              <td>극장 상영 진행<br/>1편당 2-3회 상영<br/>온 오프라인 동시 개최</td>
+                        </tr>
+                  </table>
             </section>
             <!-- 컨텐츠 - 포스터 -->
-            <section id="content_poster">포스터</section>
+            <section id="content_poster">
+                  <h1>포스터</h1>
+                  <div class="poster_container">
+                        <img src="../images/poster.png" width="300px" alt="포스터">
+                        <div class="poster_text">
+                              <p>
+                                    Memory 2021<br/>
+                                    영화인들과 영화를 사랑하는 인들의 축제<br/>
+                                    이날의 축제가 많은 이들에게 희망으로 기억되길...
+                              </p>
+                              <p>
+                                    코로나 19로 많은 사람들이 힘들어 하고있습니다.<br/>
+                                    이 시국에 부산 국제 영화제로 같이 즐기고 조금은 덜 힘든 시기를 보낼 수 있었으면 좋겠습니다.<br/><br/>
+
+                                    기존에는 오프라인에서만 즐길 수 있었지만<br />
+                                    이번 영화제는 오프라인은 물론이고 온라인에서도 영화제를 즐길 수 있습니다.<br/><br/>
+
+                                    항상 행복하시길 바랍니다.
+                              </p>
+                        </div>
+                  </div>
+            </section>
             <!-- 컨텐츠 - 심사위원& 시상 -->
-            <section id="content_winner">심사위원&시상</section>
+            <section id="content_winner">
+                  <h1>심사위원 & 시상</h1>
+                  <div>
+                        <div class="winner item">
+                             <img src="../images/film_img1.png" alt="">
+                             <h5>Lorem ipsum</h5> 
+                        </div>
+                        <div class="winner item">
+                              <img src="../images/film_img1.png" alt="">
+                              <h5>Lorem ipsum</h5> 
+                         </div>
+                         <div class="winner item">
+                              <img src="../images/film_img1.png" alt="">
+                              <h5>Lorem ipsum</h5> 
+                         </div>
+                         <div class="winner item">
+                              <img src="../images/film_img1.png" alt="">
+                              <h5>Lorem ipsum</h5> 
+                         </div>
+                         <div class="winner item">
+                              <img src="../images/film_img1.png" alt="">
+                              <h5>Lorem ipsum</h5> 
+                         </div>
+                         <div class="winner item">
+                              <img src="../images/film_img1.png" alt="">
+                              <h5>Lorem ipsum</h5> 
+                         </div>
+                  </div>
+            </section>
             <!-- 컨텐츠 - 파트너 -->
-            <section id="content_patner">파트너</section>
+            <section id="content_partner">
+                  <h1>파트너</h1>
+                  <div class="partner_container">
+                        <img src="../images/film_img1.png" alt="">
+                        <img src="../images/film_img1.png" alt="">
+                        <img src="../images/film_img1.png" alt="">
+                        <img src="../images/film_img1.png" alt="">
+                        <img src="../images/film_img1.png" alt="">
+                        <img src="../images/film_img1.png" alt="">
+                  </div>
+            </section>
       </div>
       <!-- 스폰서 -->
       <section id="main_sponser">
@@ -71,5 +152,8 @@
                   이 홈페이지는 부산국제영화제와 관련이 없습니다. (개인 포트폴리오 입니다.)
             </div>
       </footer>
+<script src="../library/jquery-3.6.0.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/announce.js"></script>
 </body>
 </html>
