@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+    background: #fff;
+}
+
+#content_event {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+#content_event > h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+/* 글 영역 */
+#content_event  > .event_container > h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#content_event .event_container > p {
+    font-size: 18px;
+    padding-bottom: 50px;
+    line-height: 25px;
+}
+
+
+/* 이미지 영역 */
+.event_container_i {
+    overflow: hidden;
+}
+
+.event_container_i > .film.item {
+    float: left;
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+.event_container_i > .film.item:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.event_container_i > .film.item > .bg > img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.event_container_i > .film.item > .caption {
+    padding-top: 5px;
+}
+
+.event_container_i > .film.item > .caption > h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.event_container_i > .film.item > .caption > h5 {
+    font-size: 18px;
+    padding-top: 5px;
+    color: #444;
+}
+
+/* 미디어 쿼리 */
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) { 
+
+} 
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    #content_event {
+        width: calc(100% - 20px);
+        margin: 0 20px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    #content_event > h1 {
+        font-size: 25px;
+    }
+
+    /* 글 영역 */
+    #content_event  > .event_container > h3 {
+        font-size: 19px;
+    }
+
+    #content_event .event_container > p {
+        font-size: 17px;
+    }
+} 
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) { 
+    #content_event {
+        width: calc(100% - 20px);
+        margin: 0 20px;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    #content_event > h1 {
+        font-size: 20px;
+    }
+
+    /* 글 영역 */
+    #content_event  > .event_container > h3 {
+        font-size: 18px;
+    }
+
+    #content_event .event_container > p {
+        font-size: 16px;
+    }
+
+    .event_container_i > .film.item > .caption > h4 {
+        font-size: 18px;
+    }
+    
+    .event_container_i > .film.item > .caption > h5 {
+        font-size: 16px;
+    }
+}

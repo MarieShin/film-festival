@@ -459,39 +459,25 @@ body {
 @media all and (max-width:767px) {
       /* 이벤트 */
       #content_event {
-            margin: 40px 25px 0;
+            margin: 40px 15px 0;
       }
 
-      #content_event > #event_text {
-            overflow: hidden;
-            margin-bottom: 20px;
-      }
       #content_event > #event_text > h3 {
             font-size: 20px;
-            float: left;
-            width: 100px;
       }
       #content_event > #event_text > p {
             font-size: 15px;
-            font-weight: 600;
-            float: right;
-            width: 100px;
-            margin-top: 10px;
+            width: 80px;
+            margin-top: 5px;
       }
       #content_event > #event_container {
-            margin-top: 25px;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-bottom: 100px;
-            text-align: center;
+            width: 100%;
+            margin: 25px 0 80px;
       }
       #content_event > #event_container > .event_item {
-            display: inline-block;
-            text-align: center;
             width: 450px;
             height: 200px;
-            background-size: cover;
-            border-radius: 10px;
+            margin-bottom: 10px;
       }
 
       /* 작은 이미지 슬라이더 */
@@ -518,7 +504,8 @@ body {
             display: flex;
             flex-direction: column;
             height: 100%;
-            margin: 20px 30px;
+            margin: 20px 30p
+            x;
       }
       
       #content_films > .films_container > .left-row {
@@ -546,7 +533,13 @@ body {
             display: none;
       }
 
-      #content_films > .films_container > .right-row > .film3 .film-caption, .film4 .film-caption {
+      #content_films > .films_container > .right-row > .film3 .film-caption {
+            position: relative;
+            bottom: 0;
+            left: 0;
+      }
+
+      #content_films > .films_container > .right-row > .film4 .film-caption {
             position: relative;
             bottom: 0;
             left: 0;
@@ -558,7 +551,7 @@ body {
 
       #content_films .film-caption > h4 {
             padding-top: 5px;
-            font-size: 20px;
+            font-size: 18px;
       }
       
       #content_films .film-caption > h5 {

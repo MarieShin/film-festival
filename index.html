@@ -5,10 +5,10 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>부산국제영화제</title>
-      <link rel="stylesheet" href="css/common.css">
-      <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="library/swiper.css">
       <link rel="stylesheet" href="library/fontawesome-free-5.15.4-web/css/all.min.css">
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
       <!-- 상단바(공통) -->
@@ -19,10 +19,10 @@
                   </div>
                   <div class="gnb"> 
                         <ul>
-                              <li><a href="#">부산국제영화제</a></li>
-                              <li><a href="#">프로그램</a></li>
-                              <li><a href="#">가이드</a></li>
-                              <li><a href="#">이벤트</a></li>
+                              <li><a href="announce.html">부산국제영화제</a></li>
+                              <li><a href="program.html">프로그램</a></li>
+                              <li><a href="guide.html">가이드</a></li>
+                              <li><a href="event.html">이벤트</a></li>
                         </ul>
                   </div>
                   <div class="trigger">
@@ -32,213 +32,216 @@
             </nav>
       </header>
       <!-- 컨텐츠 -->
-      <!-- 슬라이더 (큰 이미지) -->
-      <section id="big_image_slider">
-            <div class="swiper-container big_slider">
-                  <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1"></div>
-                        <div class="swiper-slide slide2"></div>
-                        <div class="swiper-slide slide3"></div>
+      <div id="main_content">
+            <!-- 슬라이더 (큰 이미지) -->
+            <section id="big_image_slider">
+                  <div class="swiper-container big_slider">
+                        <div class="swiper-wrapper">
+                              <div class="swiper-slide slide1"></div>
+                              <div class="swiper-slide slide2"></div>
+                              <div class="swiper-slide slide3"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                   </div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
-            </div>
-      </section>
-      <!-- 이벤트 -->
-      <section id="content_event">
-            <div id="event_text">
-                  <h3>EVENT</h3>
-                  <p>더보기+</p>
-            </div>
-            <div id="event_container">
-                  <img class="event_item" src="./images/event_open_bg.png">
-                  <img class="event_item" src="./images/event_item.png">
-                  <img class="event_item" src="./images/event_close_bg.png">
-            </div>
-      </section>
-      <!-- 슬라이더 (작은 이미지) -->
-      <section id="small_image_slider">
-            <h3>월드스네마</h3>
-            <div class="swiper-container small_slider">
-                  <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1"></div>
-                        <div class="swiper-slide slide2"></div>
-                        <div class="swiper-slide slide3"></div>
-                        <div class="swiper-slide slide4"></div>
-                        <div class="swiper-slide slide5"></div>
-                  </div>
-                  <!-- Add Arrows -->
-                  <div class="swiper-button-next swiper-button-black"></div>
-                  <div class="swiper-button-prev swiper-button-black"></div>
-            </div>
-      </section>
-      <!-- 이미지 갤러리 -->
-      <section id="content_films">
-            <h3>Films</h3>
-            <div class="films_container">
-                  <div class="left-row film film1">
-                        <div class="bg">
-                              <img class="bg-img" src="./images/film_img1.png" alt="">
-                        </div>
-                        <div class="film-caption">
-                              <h4>나는 감독이다</h4>
-                              <h5>개막작</h5>
-                        </div>
-                  </div>
-                  <div class="right-row">
-                        <div class="film film2">
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/film_img5.png" alt="">
-                              </div>
-                              <div class="film-caption">
-                                    <h4>유람선</h4>
-                                    <h5>바비 브라운</h5>
-                              </div>
-                        </div>
-                        <div class="film film3">
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/film_img6.png" alt="">
-                              </div>
-                              <div class="film-caption">
-                                    <h4>즐거운 저녁이여</h4>
-                                    <h5>월드시네마</h5>
-                              </div>
-                        </div>
-                        <div class="film hidden">
-                              <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>Lorem ipsum</h5>
-                              </div>
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
-                              </div>
-                        </div>
-                        <div class="film hidden">
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
-                              </div>
-                              <div class="film-caption">
-                                    <h4></h4>
-                                    <h5></h5>
-                              </div>
-                        </div>
-                        <div class="film film4">
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/film_img4.png" alt="">
-                              </div>
-                              <div class="film-caption">
-                                    <h4>남자들의 대화</h4>
-                                    <h5>홍콩 시네마</h5>
-                              </div>
-                        </div>
-                        <div class="film hidden">
-                              <div class="film-caption">
-                                    <h4>Lorem ipsum</h4>
-                                    <h5>Lorem ipsum</h5>
-                              </div>
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
-                              </div>
-                        </div>
-                        <div class="film film5">
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/film_img7.png" alt="">
-                              </div>
-                              <div class="film-caption">
-                                    <h4>미국의 아침</h4>
-                                    <h5>조나 킴</h5>
-                              </div>
-                        </div>
-                        <div class="film hidden">
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/test_img_1_1.png" alt="">
-                              </div>
-                              <div class="film-caption">
-                                    <h4></h4>
-                                    <h5></h5>
-                              </div>
-                        </div>
-                        <div class="film film6">
-                              <div class="bg">
-                                    <img class="bg-img" src="./images/film_img8.png" alt="">
-                              </div>
-                              <div class="film-caption">
-                                    <h4>두유 노우 코비드</h4>
-                                    <h5>월드시네마</h5>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-      </section>
-      <!-- 공지사항, 뉴스 -->
-      <section id="content_text">
-            <section class="container_notice">
-                  <h3>공지사항</h3>
-                  <article class="notice_item">
-                        <div class="date">
-                              <p>01</p>
-                              <p>2021.10</p>
-                        </div>
-                        <div class="post">
-                              <p>티켓 발매 및 상영관 입장 안내</p>
-                              <p>티켓 발매 및 상영관 입장 안내</p>
-                        </div>
-                  </article>
-                  <article class="notice_item">
-                        <div class="date">
-                              <p>27</p>
-                              <p>2021.09</p>
-                        </div>
-                        <div class="post">
-                              <p>개막식 & 폐막식 상영 예매 안내</p>
-                              <p>개막식 & 폐막식 상영 예매 안내</p>
-                        </div>
-                  </article>
-                  <article class="notice_item">
-                        <div class="date">
-                              <p>24</p>
-                              <p>2021.09</p>
-                        </div>
-                        <div class="post">
-                              <p>부산국제영화제 휠체어석(장애인석) 사전 신청 공지</p>
-                              <p>휠체어석(장애인석) 사전 신청 공지</p>
-                        </div>
-                  </article>
             </section>
-            <section class="container_news">
-                  <h3>뉴스</h3>
-                  <article class="news_item">
-                        <div class="date">
-                              <p>07</p>
-                              <p>2021.10</p>
-                        </div>
-                        <div class="post">
-                              <p>‘나도 감독이다’의 정감독님 초청</p>
-                              <p>‘나도 감독이다’의 정강독님 초청 안내</p>
-                        </div>
-                  </article>
-                  <article class="news_item">
-                        <div class="date">
-                              <p>01</p>
-                              <p>2021.10</p>
-                        </div>
-                        <div class="post">
-                              <p>이번 수상자는 누가 될 것인가...</p>
-                              <p>이번 수상자에 대한 관심이 높다</p>
-                        </div>
-                  </article>
-                  <article class="news_item">
-                        <div class="date">
-                              <p>01</p>
-                              <p>2021.10</p>
-                        </div>
-                        <div class="post">
-                              <p>야외 무대인사에서 ooo님이 등장</p>
-                              <p>야외 무대인사에서 예상치 못한 배우가 등장하는데...</p>
-                        </div>
-                  </article>
+            <!-- 이벤트 -->
+            <section id="content_event">
+                  <div id="event_text">
+                        <h3>EVENT</h3>
+                        <p>더보기+</p>
+                  </div>
+                  <div id="event_container">
+                        <img class="event_item" src="./images/event_open_bg.png">
+                        <img class="event_item" src="./images/event_item.png">
+                        <img class="event_item" src="./images/event_close_bg.png">
+                  </div>
             </section>
-      </section>
+            <!-- 슬라이더 (작은 이미지) -->
+            <section id="small_image_slider">
+                  <h3>월드스네마</h3>
+                  <div class="swiper-container small_slider">
+                        <div class="swiper-wrapper">
+                              <div class="swiper-slide slide1"></div>
+                              <div class="swiper-slide slide2"></div>
+                              <div class="swiper-slide slide3"></div>
+                              <div class="swiper-slide slide4"></div>
+                              <div class="swiper-slide slide5"></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-black"></div>
+                        <div class="swiper-button-prev swiper-button-black"></div>
+                  </div>
+            </section>
+            <!-- 이미지 갤러리 -->
+            <section id="content_films">
+                  <h3>Films</h3>
+                  <div class="films_container">
+                        <div class="left-row film film1">
+                              <div class="bg">
+                                    <img class="bg-img" src="./images/film_img1.png" alt="">
+                              </div>
+                              <div class="film-caption">
+                                    <h4>나는 감독이다</h4>
+                                    <h5>개막작</h5>
+                              </div>
+                        </div>
+                        <div class="right-row">
+                              <div class="film film2">
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/film_img5.png" alt="">
+                                    </div>
+                                    <div class="film-caption">
+                                          <h4>유람선</h4>
+                                          <h5>바비 브라운</h5>
+                                    </div>
+                              </div>
+                              <div class="film film3">
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/film_img6.png" alt="">
+                                    </div>
+                                    <div class="film-caption">
+                                          <h4>즐거운 저녁이여</h4>
+                                          <h5>월드시네마</h5>
+                                    </div>
+                              </div>
+                              <div class="film hidden">
+                                    <div class="film-caption">
+                                          <h4>Lorem ipsum</h4>
+                                          <h5>Lorem ipsum</h5>
+                                    </div>
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                                    </div>
+                              </div>
+                              <div class="film hidden">
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                                    </div>
+                                    <div class="film-caption">
+                                          <h4></h4>
+                                          <h5></h5>
+                                    </div>
+                              </div>
+                              <div class="film film4">
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/film_img4.png" alt="">
+                                    </div>
+                                    <div class="film-caption">
+                                          <h4>남자들의 대화</h4>
+                                          <h5>홍콩 시네마</h5>
+                                    </div>
+                              </div>
+                              <div class="film hidden">
+                                    <div class="film-caption">
+                                          <h4>Lorem ipsum</h4>
+                                          <h5>Lorem ipsum</h5>
+                                    </div>
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                                    </div>
+                              </div>
+                              <div class="film film5">
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/film_img7.png" alt="">
+                                    </div>
+                                    <div class="film-caption">
+                                          <h4>미국의 아침</h4>
+                                          <h5>조나 킴</h5>
+                                    </div>
+                              </div>
+                              <div class="film hidden">
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/test_img_1_1.png" alt="">
+                                    </div>
+                                    <div class="film-caption">
+                                          <h4></h4>
+                                          <h5></h5>
+                                    </div>
+                              </div>
+                              <div class="film film6">
+                                    <div class="bg">
+                                          <img class="bg-img" src="./images/film_img8.png" alt="">
+                                    </div>
+                                    <div class="film-caption">
+                                          <h4>두유 노우 코비드</h4>
+                                          <h5>월드시네마</h5>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <!-- 공지사항, 뉴스 -->
+            <section id="content_text">
+                  <section class="container_notice">
+                        <h3>공지사항</h3>
+                        <article class="notice_item">
+                              <div class="date">
+                                    <p>01</p>
+                                    <p>2021.10</p>
+                              </div>
+                              <div class="post">
+                                    <p>티켓 발매 및 상영관 입장 안내</p>
+                                    <p>티켓 발매 및 상영관 입장 안내</p>
+                              </div>
+                        </article>
+                        <article class="notice_item">
+                              <div class="date">
+                                    <p>27</p>
+                                    <p>2021.09</p>
+                              </div>
+                              <div class="post">
+                                    <p>개막식 & 폐막식 상영 예매 안내</p>
+                                    <p>개막식 & 폐막식 상영 예매 안내</p>
+                              </div>
+                        </article>
+                        <article class="notice_item">
+                              <div class="date">
+                                    <p>24</p>
+                                    <p>2021.09</p>
+                              </div>
+                              <div class="post">
+                                    <p>부산국제영화제 휠체어석(장애인석) 사전 신청 공지</p>
+                                    <p>휠체어석(장애인석) 사전 신청 공지</p>
+                              </div>
+                        </article>
+                  </section>
+                  <section class="container_news">
+                        <h3>뉴스</h3>
+                        <article class="news_item">
+                              <div class="date">
+                                    <p>07</p>
+                                    <p>2021.10</p>
+                              </div>
+                              <div class="post">
+                                    <p>‘나도 감독이다’의 정감독님 초청</p>
+                                    <p>‘나도 감독이다’의 정강독님 초청 안내</p>
+                              </div>
+                        </article>
+                        <article class="news_item">
+                              <div class="date">
+                                    <p>01</p>
+                                    <p>2021.10</p>
+                              </div>
+                              <div class="post">
+                                    <p>이번 수상자는 누가 될 것인가...</p>
+                                    <p>이번 수상자에 대한 관심이 높다</p>
+                              </div>
+                        </article>
+                        <article class="news_item">
+                              <div class="date">
+                                    <p>01</p>
+                                    <p>2021.10</p>
+                              </div>
+                              <div class="post">
+                                    <p>야외 무대인사에서 ooo님이 등장</p>
+                                    <p>야외 무대인사에서 예상치 못한 배우가 등장하는데...</p>
+                              </div>
+                        </article>
+                  </section>
+            </section>
+      </div>
+      <div id="mobile_menu"></div>
       <!-- 스폰서 -->
       <section id="main_sponser">
             스폰서

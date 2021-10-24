@@ -10,9 +10,7 @@ a {
 }
 
 #main_aside {
-    padding: 120px;
-    width: 960px;
-    margin: 0 auto;
+    padding: 120px 0 100px;
 }
 
 #main_aside > ul {
@@ -21,7 +19,6 @@ a {
 }
 
 #main_aside > ul > li {
-    /* float: left; */
     text-align: center;
     display: inline-block;
 }
@@ -31,6 +28,10 @@ a {
     font-weight: 600;
     color: #222;
     padding-right: 80px;
+}
+
+#main_aside > ul > li:nth-child(2) > a {
+    padding-right: 0;
 }
 
 #wrap {
@@ -45,6 +46,7 @@ a {
 }
 
 #wrap > .content_open_close > h1 {
+    font-size: 30px;
     text-align: center;
     padding-bottom: 40px;
 }
@@ -57,6 +59,7 @@ a {
 #wrap > .content_open_close > .op_cl_container p {
     font-size: 18px;
     padding-bottom: 20px;
+    line-height: 25px;
 }
 
 #wrap > .content_open_close > .op_cl_container table {
@@ -66,7 +69,7 @@ a {
     margin-bottom: 30px;
 }
 
-#wrap > .content_open_close > .op_cl_container th,td {
+#wrap > .content_open_close > .op_cl_container th, td {
     border: 1px solid #444;
     padding: 10px;
     font-size: 18px;
@@ -75,5 +78,131 @@ a {
 
 /* 지도 */
 #wrap > .map {
+    width: 960px;
+    margin: 0 auto;
+    /* padding-bottom: 80px; */
+
     display: none;
+}
+
+#wrap > .map > h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#wrap > .map > .map_container {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #444;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+/* 미디어 쿼리 */
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) {
+      
+} 
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    /* 메뉴 */
+    #main_aside {
+        padding: 120px 0 80px;
+    }
+
+    #main_aside > ul > li > a {
+        font-size: 18px;
+    }
+
+    #wrap {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    /* 개 폐막식 안내 */
+    #wrap > .content_open_close > h1 {
+        font-size: 23px;
+    }
+
+    #wrap > .content_open_close > .op_cl_container h5 {
+        font-size: 18px;
+    }
+
+    #wrap > .content_open_close > .op_cl_container p {
+        font-size: 16px;
+    }
+    
+    #wrap > .content_open_close > .op_cl_container th, td {
+        font-size: 16px;
+    }
+
+    /* 지도 */
+
+    #wrap > .map {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    #wrap > .map > h1 {
+        font-size: 23px;
+    }
+}
+
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+    /* 메뉴 */
+    #main_aside {
+        padding: 100px 0 50px;
+    }
+
+    #main_aside > ul {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    #main_aside > ul > li > a {
+        font-size: 18px;
+        padding-right: 30px;
+    }
+
+    #wrap {
+        width: calc(100% - 20px);
+    }
+
+    /* 개 폐막식 안내 */
+    #wrap > .content_open_close > h1 {
+        font-size: 20px;
+    }
+
+    #wrap > .content_open_close > .op_cl_container h5 {
+        font-size: 17px;
+    }
+
+    #wrap > .content_open_close > .op_cl_container p {
+        font-size: 15px;
+    }
+    
+    #wrap > .content_open_close > .op_cl_container th, td {
+        font-size: 15px;
+    }
+
+    /* 지도 */
+    #wrap > .map {
+        width: calc(100% - 20px);
+        margin-bottom: 40px;
+    }
+
+    #wrap > .map > h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #wrap > .map > .map_container {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 }
