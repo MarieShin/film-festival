@@ -1,14 +1,20 @@
 // gnb 페이지 이동
-// var page = ["announce.html", "program.html", "guide.html", "event.html"];
-// var gnbIndex;
-// $(".gnb li").on({
+var page = ["announce.html", "program.html", "guide.html", "event.html"];
+var gnbIndex;
+$(".gnb li").on({
+      "click" : function() {
+            gnbIndex = $(this).index();
+            console.log(gnbIndex);
+            if (gnbIndex != undefined) {
+                  var gnbUrl = page[gnbIndex];
+                  location.href = gnbUrl;
+            }
+      }
+});
+
+// $(".logo").on({
 //       "click" : function() {
-//             gnbIndex = $(this).index();
-//             console.log(gnbIndex);
-//             if (gnbIndex != undefined) {
-//                   var gnbUrl = page[gnbIndex];
-//                   location.href = gnbUrl;
-//             }
+//             location.href = "index.html";
 //       }
 // });
 
@@ -36,7 +42,7 @@ $(".trigger").on({
                   $("#main_content").show();
                   $("#main_footer").show();
                   $("#mobile_menu").hide();
-                  $("#main_header").css({"background": "rgba(0,0,0,.60)"});
+                  // $("#main_header").css({"background": "rgba(0,0,0,.60)"});
 
             }
       }
@@ -54,7 +60,7 @@ $(window).resize(function() {
                   $("#main_footer").show();
                   
                   $("#mobile_menu").hide();
-                  $("#main_header").css({"background": "rgba(0,0,0,.60)"});
+                  // $("#main_header").css({"background": "rgba(0,0,0,.60)"});
 
             }
       }
