@@ -75,6 +75,10 @@ body {
       width: 100px;
       margin-top: 10px;
 }
+#content_event > #event_text > p > a {
+      color: #222;
+      text-decoration: none;
+}
 #content_event > #event_container {
       margin-top: 30px;
       margin-left: 10px;
@@ -89,6 +93,7 @@ body {
       height: 250px;
       background-size: cover;
       border-radius: 10px;
+      margin-bottom: 8px;
 }
 
 
@@ -125,17 +130,17 @@ body {
 }
 
 #small_image_slider .swiper-slide.slide1 {
-      background: url('../images/film_img2.jpg');
+      background: url('../images/film_img2.png');
       background-size: cover;
       background-position: center;
 }
 #small_image_slider .swiper-slide.slide2 {
-      background: url('../images/film_img3.jpg');
+      background: url('../images/film_img3.png');
       background-size: cover;
       background-position: center;
 }
 #small_image_slider .swiper-slide.slide3 {
-      background: url('../images/film_img1.png');
+      background: url('../images/film_img11.png');
       background-size: cover;
       background-position: center;
 }
@@ -150,12 +155,16 @@ body {
       background-position: center;
 }
 #small_image_slider .swiper-button-next {
-      background: url('../images/arrow-right-circle.svg');
+      background: url('../images/arrow_right_img_25.png');
+      width: 25px;
+      height: 25px;
       background-repeat: no-repeat;
       background-position-y: center;
 }
 #small_image_slider .swiper-button-prev {
-      background: url('../images/arrow-left-circle.svg');
+      background: url('../images/arrow_left_img_25.png');
+      width: 25px;
+      height: 25px;
       background-repeat: no-repeat;
       background-position-y: center;
 }
@@ -277,13 +286,13 @@ body {
 
 #content_text > .container_notice {
       float: left;
-      width: calc(50% - 25px);
+      width: calc(50% - 20px);
       height: auto;
-      margin-right: 50px;
+      margin-right: 40px;
 }
 #content_text > .container_news {
       float: left;
-      width: calc(50% - 25px);
+      width: calc(50% - 20px);
       height: auto;
 }
 
@@ -331,6 +340,9 @@ body {
 #content_text > .container_notice > .notice_item > .post > p:first-child {
       font-size: 18px;
       font-weight: 400;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
 }
 
 #content_text > .container_notice > .notice_item > .post > p:nth-child(2) {
@@ -454,7 +466,54 @@ body {
             top: 0;
             right: -140px; 
       }
+      
+      /* 공지사항, 뉴스 */
+      #content_text {
+            width: 100%;
+      }
+
+      #content_text > .container_notice {
+            padding-left: 20px;
+            width: calc(50% - 35px);
+            margin-right: 15px;
+      }
+
+      #content_text > .container_news {
+            padding-left: 20px;
+            width: calc(50% - 35px);
+      }
+
+      #content_text > .container_notice > .notice_item > .post > p:first-child {
+            font-size: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+      }
+      
+      #content_text > .container_notice > .notice_item > .post > p:nth-child(2) {
+            font-size: 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+      }
+
+      #content_text > .container_news > .news_item > .post > p:first-child {
+            font-size: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+      }
+      
+      #content_text > .container_news > .news_item > .post > p:nth-child(2) {
+            font-size: 15px;
+            color: #999;
+            padding-top: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+      }
 }
+
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
 @media all and (max-width:767px) {
       /* 이벤트 */
@@ -477,7 +536,6 @@ body {
       #content_event > #event_container > .event_item {
             width: 450px;
             height: 200px;
-            margin-bottom: 10px;
       }
 
       /* 작은 이미지 슬라이더 */
@@ -494,6 +552,10 @@ body {
 
 
       /* 이미지 갤러리 */
+      #content_films > .films_container > .left-row > .bg {
+            width: 100%;
+      }
+
       #content_films > h3 {
             font-size:25px;
             color: white;
@@ -504,8 +566,7 @@ body {
             display: flex;
             flex-direction: column;
             height: 100%;
-            margin: 20px 30p
-            x;
+            margin: 20px 30px;
       }
       
       #content_films > .films_container > .left-row {
@@ -550,7 +611,7 @@ body {
       }
 
       #content_films .film-caption > h4 {
-            padding-top: 5px;
+            padding-top: 7px;
             font-size: 18px;
       }
       
@@ -562,9 +623,8 @@ body {
 
       /* 공지사항, 뉴스 */
       #content_text {
-            max-width: 767px;
-            margin: 0 auto;
-            padding: 50px 20px;
+            width: 100%;
+            margin: 30px 20px;
       }
 
       #content_text > .container_notice {

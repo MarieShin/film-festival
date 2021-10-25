@@ -6,40 +6,61 @@ body {
 }
 
 #wrap {
-    width: 960px;
+    width: 1040px;
     margin: 0 auto;
     padding-top: 140px;
     padding-bottom: 100px;
 }
 
 /* 오늘의 상영작, 상영 예정작 */
-.content_program, .content_program_t {
-    overflow: hidden;
-}
-
 .content_program h3 , .content_program_t h3 {
     font-size: 25px;
     font-weight: 600;
     padding: 30px 0;
 }
 
+.program_container {
+    overflow: hidden;
+}
+
 .program_container > .film.item {
     float: left;
-    width: calc((100% - 60px) / 4);
+    width: calc((100% - 45px) / 3);
     margin-right: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
-.program_container > .film.item:last-child {
+/* .program_container > .film.item:nth-child(3n) {
     margin-right: 0;
-}
+} */
 
 .program_container > .film.item > .bg > img {
     width: 100%;
     border-radius: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.film.item .bg {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.film.item .bg-img:hover, .film.item .bg-img:focus {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .program_container > .film.item > .caption {
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 .program_container > .film.item > .caption > h4 {
@@ -49,7 +70,9 @@ body {
 
 .program_container > .film.item > .caption > h5 {
     font-size: 18px;
-    padding-top: 5px;
+    padding-top: 8px;
+    line-height: 22px;
+    height: 50px;
     color: #444;
 }
 

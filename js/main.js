@@ -17,7 +17,7 @@ var swiper_small = new Swiper('.small_slider', {
             prevEl: '.swiper-button-prev',
       },
       autoplay: {
-            delay: 3000
+            delay: 2000
       },
       speed: 800,
       breakpoints: {

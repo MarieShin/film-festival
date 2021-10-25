@@ -19,6 +19,8 @@ $(".side.menu").on({
                     break;
             }
         }
+        $(".side.menu").removeClass('current');
+        $(this).addClass('current');
     }
 });
 

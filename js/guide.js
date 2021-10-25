@@ -1,7 +1,7 @@
 // 컨텐츠 visible, invisible
 var gnbIndex;
 
-$(".guide.gnb").on({
+$(".guide_gnb").on({
     "click": function() {
             gnbIndex = $(this).index();
             if (gnbIndex != undefined) {
@@ -14,7 +14,9 @@ $(".guide.gnb").on({
                         break;
                 }
             } 
-    }
+            $('.guide_gnb').removeClass('current');
+            $(this).addClass('current');
+    }   
 });
 
 /* 개폐막식 안내 */
@@ -25,10 +27,6 @@ function op_cl() {
         $(".content_open_close").show();
         $(".map").hide();
     }
-
-    // $(this).child().css({"color": "#222"});
-    // $(this).not(':nth-child(1)').child().css({"color":"#999"});
-    
 }
 
 /* 지도 */

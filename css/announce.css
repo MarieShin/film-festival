@@ -10,12 +10,13 @@ a {
 
 /* 메뉴 */
 #wrap {
-      /* width: 1040px; */
-      /* margin: 0 auto; */
+      width: 1040px;
+      margin: 0 auto;
       overflow: hidden;
       padding-top: 80px;
+      padding-bottom: 80px;
       /* margin-bottom: 60px; */
-      margin: 0 30px 60px;
+      /* margin: 0 30px 60px; */
 }
 
 #wrap > .border {
@@ -24,7 +25,7 @@ a {
       height: 100%;
       background-color: #444;
 }
- 
+
 #main_aside {
       float: left;
       width: 200px;
@@ -39,9 +40,9 @@ a {
       margin-right: 30px;
 }
 
-/* #main_aside > ul > .current {
+#main_aside > ul > li.current > a {
       color: #222;
-} */
+}
 
 #main_aside > ul > li > a {
       font-size: 23px;
@@ -106,7 +107,7 @@ a {
       border: 1px solid #ccc;
       font-size: 18px;
       margin-top: 20px;
-      padding: 10px;
+      padding: 15px;
       line-height: 25px;
 }
 
@@ -140,11 +141,14 @@ a {
 #content_winner .winner.item > img {
       width: 100%;
       border-radius: 15px;
+      
 }
 
 #content_winner .winner.item > h5 {
-      font-size: 20px;
+      height: 50px;
+      font-size: 18px;
       padding-top: 5px;
+      text-align: center;
 }
 
 /* 컨텐츠 - 파트너 */
@@ -173,15 +177,13 @@ a {
 /* 미디어 쿼리 */
 /* PC (해상도 1024px)*/ 
 @media all and (min-width:1024px) {
-      
       #content_poster > .poster_container {
-           text-align: left;
+            text-align: left;
       }
 
       #content_poster > .poster_container > .poster_text {
             display: inline-block;
             width: 600px;
-            margin-left: 20px;
       }
 
       #content_poster > .poster_container > .poster_img {
@@ -191,6 +193,10 @@ a {
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (min-width:768px) and (max-width:1023px) { 
+      #wrap {
+            width: 100%;
+      }
+
       #main_aside > ul > li > a {
             font-size: 22px;
       }
@@ -215,8 +221,16 @@ a {
       }
 
       /* 컨텐츠 - 심사위원&시상 */
+      #content_winner .winner.item {
+            width: calc((100% - 30px) / 2);
+      }
+
       #content_winner > h1 {
             font-size: 25px;
+      }
+
+      #content_winner .winner.item > h5 {
+            font-size: 17px;
       }
 
       /* 컨텐츠 - 파트너 */
@@ -227,11 +241,17 @@ a {
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
 @media all and (max-width:767px) {
+      #wrap {
+            width: 100%;
+            padding-bottom: 50px;
+      }
+
       /* 메뉴 */
       #main_aside {
             float: none;
             width: 100%;
             padding-top: 30px;
+            margin-left: 20px;
       }
 
       #main_aside > ul {
@@ -253,13 +273,14 @@ a {
       /* 컨텐츠 - 소개 */
       #content_announce {
             float: none;
-            width: 100%;
+            width: calc(100% - 40px);
             padding: 30px 0;
-            margin-left: 0;
+            margin-left: 20px;
+            margin-right: 20px;
       }
 
       #content_announce > h1 {
-            font-size: 23px;
+            font-size: 20px;
       }
       
       #content_announce > .announce-table th, td {
@@ -269,13 +290,14 @@ a {
       /* 컨텐츠 - 포스터 */
       #content_poster {
             float: none;
-            width: 100%;
+            width: calc(100% - 40px);
             padding-top: 30px;
-            margin-left: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
       }
 
       #content_poster > h1 {
-            font-size: 23px;
+            font-size: 20px;
       }
 
       #content_poster > .poster_container > .poster_img {
@@ -283,22 +305,28 @@ a {
       }
 
       #content_poster > .poster_container > .poster_text {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 20px;
+            margin: 20px 5px;
       }
 
 
       /* 컨텐츠 - 심사위원&시상 */
+      #content_winner .winner.item {
+            width: calc((100% - 30px) / 2);
+      }
+
       #content_winner {
             float: none;
-            width: 100%;
+            width: calc(100% - 40px);
             padding-top: 30px;
-            margin-left: 0;
+            margin-left: 20px;
+            margin-right: 20px;
             overflow: hidden;
       }
 
       #content_winner > h1 {
-            font-size: 23px;
+            font-size: 20px;
       }
 
       #content_winner .winner.item {
@@ -307,20 +335,21 @@ a {
       }
 
       #content_winner .winner.item > h5 {
-            font-size: 18px;
+            font-size: 15px;
       }
 
       /* 컨텐츠 - 파트너 */
       #content_partner {
             float: none;
-            width: 100%;
+            width: calc(100% - 40px);
             padding-top: 30px;
-            margin-left: 0;
+            margin-left: 20px;
+            margin-right: 20px;
             overflow: hidden;
       }
 
       #content_partner > h1 {
-            font-size: 23px;
+            font-size: 20px;
       }
 
       #content_partner > .partner_container > img {
