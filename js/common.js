@@ -1,19 +1,3 @@
-// gnb 페이지 이동
-var page = ["announce.html", "program.html", "guide.html", "event.html"];
-var gnbIndex;
-// $(".gnb li").on({
-//       "click" : function() {
-//             gnbIndex = $(this).index();
-//             console.log(gnbIndex);
-//             if (gnbIndex != undefined) {
-//                   var gnbUrl = page[gnbIndex];
-//                   console.log(window.location.href);
-
-//                   location.href = gnbUrl;
-//             }
-//       }
-// });
-
 // 모바일 버전 싱단 gnb 
 $(".trigger").on({
       "click": function() {
@@ -38,8 +22,6 @@ $(".trigger").on({
                   $("#main_content").show();
                   $("#main_footer").show();
                   $("#mobile_menu").hide();
-                  // $("#main_header").css({"background": "rgba(0,0,0,.60)"});
-
             }
       }
 });
@@ -56,8 +38,23 @@ $(window).resize(function() {
                   $("#main_footer").show();
                   
                   $("#mobile_menu").hide();
-                  // $("#main_header").css({"background": "rgba(0,0,0,.60)"});
-
             }
+      }
+});
+
+// active bar 
+$(".gnb li").on({
+      "mouseenter" : function() {
+            $(".active_bar").show();
+
+            var listLeft = $(this).offset().left;
+            var listWidth = $(this).width();
+
+            $(".active_bar").width(listWidth);
+            $(".active_bar").offset({ left: listLeft + 15 });
+      },
+
+      "mouseleave" : function() {
+            $(".active_bar").hide();
       }
 });

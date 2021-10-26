@@ -4,7 +4,8 @@ var swiper_big = new Swiper('.big_slider', {
             el: '.swiper-pagination',
       },
       autoplay: {
-            delay: 3000
+            delay: 3000,
+            disableOnInteraction: false
       },
       speed: 800
 });
@@ -17,7 +18,8 @@ var swiper_small = new Swiper('.small_slider', {
             prevEl: '.swiper-button-prev',
       },
       autoplay: {
-            delay: 2000
+            delay: 2000,
+            disableOnInteraction: false
       },
       speed: 800,
       breakpoints: {

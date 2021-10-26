@@ -25,13 +25,9 @@ body {
 
 .program_container > .film.item {
     float: left;
-    width: calc((100% - 45px) / 3);
-    margin-right: 15px;
-    margin-bottom: 50px;
+    width: calc((100% - 60px) / 3);
+    margin: 0 10px 50px;
 }
-/* .program_container > .film.item:nth-child(3n) {
-    margin-right: 0;
-} */
 
 .program_container > .film.item > .bg > img {
     width: 100%;
@@ -101,13 +97,10 @@ body {
     }
 
     .program_container > .film.item {
-        width: calc((100% - 40px) / 3);
-        margin-right: 20px;
+        width: calc((100% - 60px) / 3);
+        margin: 0 10px;
     }
-    .program_container > .film.item:nth-child(3n) {
-        margin-right: 0;
-    }
-    
+
     .program_container > .film.item > .caption > h4 {
         font-size: 18px;
     }
@@ -135,12 +128,8 @@ body {
     }
 
     .program_container > .film.item {
-        width: calc((100% - 20px) / 2);
-        margin-right: 20px;
-    }
-
-    .program_container > .film.item:nth-child(2n) {
-        margin-right: 0;
+        width: calc((100% - 40px) / 2);
+        margin: 0 10px;
     }
     
     .program_container > .film.item > .caption > h4 {
