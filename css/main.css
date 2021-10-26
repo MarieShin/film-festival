@@ -489,17 +489,17 @@ body {
       /* 공지사항, 뉴스 */
       #content_text {
             width: 100%;
-            padding: 80px 20px;
+            /* padding: 80px 20px; */
       }
 
       #content_text > .container_notice {
-            width: calc((100% - 80px) / 2);
-            margin: 0 10px;
+            width: calc((100% - 125px) / 2);
+            margin: 0 30px;
       }
 
       #content_text > .container_news {
-            width: calc((100% - 80px) / 2);
-            margin: 0 10px;
+            width: calc((100% - 125px) / 2);
+            margin: 0 30px;
       }
 
       #content_text h3 {
@@ -657,23 +657,22 @@ body {
       /* 공지사항, 뉴스 */
       #content_text {
             width: 100%;
-            padding: 50px 20px;
       }
 
       #content_text > .container_notice {
-            /* float: none; */
-            width: 100%;
+            width: calc(100% - 40px);
+            display: block;
             margin: 0 20px;
       }
       #content_text > .container_news {
-            /* float: none; */
-            width: 100%;
-            margin-top: 30px;
+            width: calc(100% - 40px);
+            display: block;
+            margin: 30px 20px 0;
       }
 
       #content_text h3 {
             font-size: 20px;
-      }
+      } 
 
       /* 공지사항 글 라인 */
       #content_text > .container_notice > .notice_item > .date > p:first-child {

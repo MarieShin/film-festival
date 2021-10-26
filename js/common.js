@@ -39,7 +39,7 @@ $(window).resize(function() {
                   
                   $("#mobile_menu").hide();
             }
-      }
+      } 
 });
 
 // active bar 
