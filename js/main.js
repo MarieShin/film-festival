@@ -2,6 +2,7 @@
 var swiper_big = new Swiper('.big_slider', {
       pagination: {
             el: '.swiper-pagination',
+            clickable: true,
       },
       autoplay: {
             delay: 3000,

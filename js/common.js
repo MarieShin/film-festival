@@ -6,7 +6,7 @@ $(".trigger").on({
                   $(".mobile.close").show();
             
                   $("#main_content").hide();
-                  $("#main_sponser").hide();
+                  $("#main_sponsor").hide();
                   $("#main_footer").hide();
 
                   $("#mobile_menu").empty();

@@ -125,6 +125,7 @@ ul { list-style: none; }
       font-size: 15px;
       padding-top: 30px;
       margin-left: 30px;
+      line-height: 23px;
 }
 
 #main_footer > .info {
@@ -134,10 +135,11 @@ ul { list-style: none; }
       text-align: center;
       left: 0;
       right: 0;
+      line-height: 13px;
 }
 
 /* 스폰서 */
-#main_sponser {
+#main_sponsor {
       width: 100%;
       text-align: center;
       background-color: #fff;
@@ -172,11 +174,13 @@ ul { list-style: none; }
 
       #main_footer > .address {
             font-size: 13px;
-            line-height: 15px;
+            line-height: 23px;
+            margin-left: 0;
             text-align: center;
       }
 
       #main_footer > .info {
             font-size: 12px;
+            line-height: 12px;
       }
 }
