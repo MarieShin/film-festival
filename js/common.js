@@ -1,6 +1,10 @@
 // 모바일 버전 싱단 gnb 
 $(".trigger").on({
       "click": function() {
+
+            var pathname = document.location.pathname; 
+            console.log(pathname);
+
             if ($(".mobile.hamburger").is(":visible")) {
                   $(".mobile.hamburger").hide();
                   $(".mobile.close").show();
@@ -14,7 +18,11 @@ $(".trigger").on({
                   var nav = $(".gnb").clone();
                   $("#mobile_menu").append(nav);
                   $("#mobile_menu").show();
-                  $("#main_header").css({"background": "#333"});
+                  if (pathname.indexOf('index.html') !== -1) {
+                        $("#main_header").css({"background": "rgba(0,0,0,.60)"}); 
+                  } else {
+                        $("#main_header").css({"background": "#333"});
+                  }
             } else {
                   $(".mobile.hamburger").show();
                   $(".mobile.close").hide();
