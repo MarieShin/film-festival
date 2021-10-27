@@ -42,7 +42,7 @@
     </aside>
     <div id="wrap">
         <!-- 개 폐막식 안내 -->
-        <section class="content_open_close">
+        <section class="content_open_close current">
             <h1>개폐막식 안내</h1>
             <div class="op_cl_container">
                 <div>
@@ -82,9 +82,13 @@
             </div>
         </section>
         <!-- 지도 -->
-        <section class="map">
+        <section class="content_map">
             <h1>지도</h1>
-            <div class="map_container"></div>
+            <div class="map_info">
+                <h4>주소 : 부산광역시 해운대구 우동 수영강변대로 120</h4>
+                <h4>대표전화 : 1234 - 1234</h4>
+            </div>
+            <div id="map"></div>
         </section>
     </div>
     <!-- 모바일 메뉴 -->
@@ -115,7 +119,9 @@
         </div>
     </footer>
 <script src="../library/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1f6fc928cd0448976eed0a122f419d9f"></script>
 <script src="../js/common.js"></script>
+<script src="../js/map.js"></script>
 <script src="../js/guide.js"></script>
 </body>
 </html>

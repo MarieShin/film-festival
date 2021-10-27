@@ -7,10 +7,10 @@ $(".guide_gnb").on({
             if (gnbIndex != undefined) {
                 switch(gnbIndex) {
                     case 0:
-                        op_cl();
+                        op_cl_ui();
                         break;
                     case 1:
-                        map();
+                        map_ui();
                         break;
                 }
             } 
@@ -20,21 +20,23 @@ $(".guide_gnb").on({
 });
 
 /* 개폐막식 안내 */
-function op_cl() {
+function op_cl_ui() {
     if ($(".content_open_close").is(":visible")) {
-        $(".map").hide();
+        $(".content_map").hide();
     } else {
         $(".content_open_close").show();
-        $(".map").hide();
+        $(".content_map").hide();
     }
 }
 
 /* 지도 */
-function map() {
-    if ($(".map").is(":visible")) {
+function map_ui() {
+    if ($(".content_map").is(":visible")) {
         $(".content_open_close").hide();
     } else {
         $(".content_open_close").hide();
-        $(".map").show();
+        $(".content_map").show();
     }
+    map.relayout();
+    setCenter();
 }
