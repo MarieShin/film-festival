@@ -240,13 +240,13 @@ body {
 #content_films > .films_container > .right-row > .film3 .film-caption {
       position: absolute;
       top: 0;
-      right: -180px; 
+      right: -170px; 
 }
 
 #content_films > .films_container > .right-row > .film4 .film-caption {
       position: absolute;
       top: 0;
-      right: -160px; 
+      right: -150px; 
 }
 
 #content_films .bg-img {
@@ -482,11 +482,11 @@ body {
 
       #content_films .film-caption > h4 {
             padding-top: 5px;
-            font-size: 20px;
+            font-size: 18px;
       }
       
       #content_films .film-caption > h5 {
-            font-size: 16px;
+            font-size: 14px;
             padding-top: 5px;
       }
 
@@ -497,13 +497,13 @@ body {
       #content_films > .films_container > .right-row > .film3 .film-caption {
             position: absolute;
             top: 0;
-            right: -160px; 
+            right: -140px; 
       }
       
       #content_films > .films_container > .right-row > .film4 .film-caption {
             position: absolute;
             top: 0;
-            right: -140px; 
+            right: -120px; 
       }
       
       /* 공지사항, 뉴스 */
@@ -674,7 +674,7 @@ body {
       }
       
       #content_films .film-caption > h5 {
-            font-size: 15px;
+            font-size: 14px;
             color: #9ed5d2;
             padding-top: 5px;
       }
