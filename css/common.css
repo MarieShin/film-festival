@@ -48,6 +48,7 @@ ul { list-style: none; }
       padding: 0 15px;
 }
 #main_header > .gnb_container > .gnb > ul > li > a {
+      display: block;
       color: white;
       text-decoration: none;
       font-size: 18px;
@@ -107,6 +108,7 @@ ul { list-style: none; }
 }
 
 #mobile_menu > .gnb > ul > li > a {
+      display: block;
       color: #fff;
       text-decoration: none;
       font-size: 18px;
