@@ -1,14 +1,18 @@
+new WOW().init();
+
 // library Swiper
 var swiper_big = new Swiper('.big_slider', {
       pagination: {
             el: '.swiper-pagination',
             clickable: true,
       },
+      loop: true,
       autoplay: {
-            delay: 3000,
+            delay: 2500,
             disableOnInteraction: false
       },
-      speed: 800
+      speed: 1000,
+      effect: 'fade'
 });
 
 var swiper_small = new Swiper('.small_slider', {
@@ -19,10 +23,11 @@ var swiper_small = new Swiper('.small_slider', {
             prevEl: '.swiper-button-prev',
       },
       autoplay: {
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: false
       },
-      speed: 800,
+      speed: 1000,
+      loop : true,
       breakpoints: {
             // when window width is >= 320px
             320: {
@@ -44,6 +49,6 @@ var swiper_small = new Swiper('.small_slider', {
                   slidesPerView: 3,
                   spaceBetween: 30
             }
-      }
+      },
       
 });

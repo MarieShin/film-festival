@@ -16,7 +16,7 @@ ul { list-style: none; }
 
 #main_header {
       width: 100%;
-      height: 80px;
+      height: 100px;
       background-color: #333;
       color: #fff;
       position: fixed;
@@ -25,14 +25,19 @@ ul { list-style: none; }
 
 #main_header  > .gnb_container {
       overflow: hidden;
+      position: relative;
 }
 
 #main_header > .gnb_container > .logo {
       float: left;
 }
+
+#main_header > .gnb_container > .logo > a {
+      display: block;
+}
 #main_header > .gnb_container > .logo img {
       width: 200px;
-      padding: 10px 15px;
+      padding: 20px 15px;
 }
 
 #main_header > .gnb_container > .gnb {
@@ -46,6 +51,7 @@ ul { list-style: none; }
 #main_header > .gnb_container > .gnb > ul > li {
       float: left;
       padding: 0 15px;
+      line-height: 100px;
 }
 #main_header > .gnb_container > .gnb > ul > li > a {
       display: block;
@@ -67,13 +73,36 @@ ul { list-style: none; }
       display: none;
 }
 
+#main_header > .gnb_container > .lnb {
+      float: right;
+      position: absolute;
+      right: 0;
+      top: 0;
+}
+
+#main_header > .gnb_container > .lnb > ul {
+      overflow: hidden;
+      padding: 0 15px;
+}
+
+#main_header > .gnb_container > .lnb > ul > li {
+      float: left;
+      padding: 5px 15px 0;
+}
+
+#main_header > .gnb_container > .lnb > ul > li > a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+}
+
 /* active_path, active bar */
 #main_header > .active_path {
       position: fixed;
       width: 100%;
       height: 2px;
       /* background: #999; */
-      top: 60px;
+      top: 65px;
       z-index: 1;
 }
 
@@ -161,7 +190,18 @@ ul { list-style: none; }
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
 @media all and (max-width:767px) {
+      #main_header {
+            height: 80px;
+      }
+
+      #main_header > .gnb_container > .logo img {
+            padding: 10px 15px;
+      }
+
       #main_header > .gnb_container > .gnb {
+            display : none;
+      }
+      #main_header > .gnb_container > .lnb {
             display : none;
       }
       #main_header > .gnb_container > .trigger {
