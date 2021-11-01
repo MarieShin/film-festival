@@ -134,24 +134,71 @@ body {
 #content_event > #event_container {
       margin: 30px 0 120px;
       text-align: center;
+      position: relative;
 }
+
 #content_event > #event_container > .event_item {
       display: inline-block;
       text-align: center;
-      width: calc((100% - 80px) / 3);
-      margin: 0 10px;
-      /* width: 550px; */
-      /* height: 250px; */
+      /* width: calc((100% - 80px) / 3); */
+      width: 450px;
+      height: 200px;
+      margin: 0 10px 30px;
       background-size: cover;
-      border-radius: 10px;
+      /* border-radius: 10px;  */
+      border-collapse: collapse;
+      position: relative;
+}
+
+#content_event > #event_container > .event_item  > img {
+      width: 100%;
+      box-shadow: 2px 2px 5px #222;
+}
+
+#content_event > #event_container > .event_item::before {
+      transition: all 0.4s;
+      position: absolute;
+      content: "";
+      width: 99%;
+      height: 50%;
+      left: 50%;
+      margin-left: -50%;
+      top: 25%;
+      border-color: rgba(200, 200, 200, 0);
+      border-style: solid;
+      border-width: 0 5px;
+}
+
+#content_event > #event_container > .event_item::after {
+      transition: all 0.4s;
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 105%;
+      left: 50%;
+      margin-left: -25%;
+      top: 0px;
+      border-color: rgba(200, 200, 200, 0);
+      border-style: solid;
+      border-width: 5px 0;
 }
 
 #content_event > #event_container > .event_item:hover {
       opacity: 0.5;
-      border: 3px solid #9ed5d2;
-      margin: -3px;
+      /* border: 2px solid #9ed5d2; */
 }
 
+#content_event > #event_container > .event_item:hover::after {
+      width: 454px;
+      margin-left: -50%;
+      border-color: #9ed5d2;
+}
+
+#content_event > #event_container > .event_item:hover::before {
+      height: 218px;
+      top: 0%;
+      border-color: #9ed5d2;
+}
 
 /* 작은 이미지 슬라이더 */
 
@@ -382,19 +429,15 @@ body {
       max-width: 1280px;
       margin: 0 auto;
       padding: 80px 0px;
-      /* width: 1024px; */
-      /* overflow: hidden; */
 }
 
 #content_text > .container_notice {
       display: inline-block;
-      /* float: left; */
       width: calc((100% - 165px) / 2);
       margin: 0 40px;
 }
 #content_text > .container_news {
       display: inline-block;
-      /* float: left; */
       width: calc((100% - 165px) / 2);
       margin: 0 40px;
 }
@@ -441,7 +484,7 @@ body {
       padding-top: 10px;
 }
 
-#content_text > .container_notice > .notice_item > .post > p:first-child {
+#content_text > .container_notice > .notice_item > .post > a:first-child {
       font-size: 20px;
       font-weight: 400;
 
@@ -450,7 +493,7 @@ body {
       overflow: hidden;
 }
 
-#content_text > .container_notice > .notice_item > .post > p:nth-child(2) {
+#content_text > .container_notice > .notice_item > .post > a:nth-child(2) {
       font-size: 18px;
       color: #666;
       padding-top: 10px;
@@ -459,6 +502,40 @@ body {
       white-space: nowrap;
       overflow: hidden;
 }
+
+/* 공지사항 hover event */
+#content_text > .container_notice > .notice_item > .post >  a {
+      position: relative;
+      color: #222;
+      text-decoration: none;
+}
+
+#content_text > .container_notice > .notice_item:hover > .post > a {
+      color: blue;
+}
+
+#content_text > .container_notice > .notice_item:hover > .date > p {
+      color: blue;
+}
+
+#content_text > .container_notice > .notice_item > .post > a::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: blue;
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: transform 0.3s ease;
+}
+
+#content_text > .container_notice > .notice_item:hover > .post > a::before {
+      transform: scaleX(1);
+}
+
 
 /* 뉴스 */
 #content_text > .container_news > .news_item {
@@ -497,7 +574,7 @@ body {
       padding-top: 10px;
 }
 
-#content_text > .container_news > .news_item > .post > p:first-child {
+#content_text > .container_news > .news_item > .post > a:first-child {
       font-size: 20px;
 
       text-overflow: ellipsis;
@@ -505,7 +582,7 @@ body {
       overflow: hidden;
 }
 
-#content_text > .container_news > .news_item > .post > p:nth-child(2) {
+#content_text > .container_news > .news_item > .post > a:nth-child(2) {
       font-size: 18px;
       color: #666;
       padding-top: 10px;
@@ -514,6 +591,39 @@ body {
       white-space: nowrap;
       overflow: hidden;
 }
+
+/* 뉴스 hover event */
+#content_text > .container_news > .news_item > .post >  a {
+      position: relative;
+      color: #222;
+      text-decoration: none;
+}
+
+#content_text > .container_news > .news_item:hover > .post > a {
+      color: blue;
+}
+
+#content_text > .container_news > .news_item:hover > .date > p {
+      color: blue;
+}
+
+#content_text > .container_news > .news_item > .post > a::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: blue;
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: transform 0.3s ease;
+}
+
+#content_text > .container_news > .news_item:hover > .post > a::before {
+      transform: scaleX(1);
+} 
 
 
 
@@ -560,12 +670,12 @@ body {
       #content_event > #event_container > .event_item {
             display: inline-block;
             text-align: center;
-            width: calc((100% - 60px) / 2);
+            /* width: calc((100% - 60px) / 2); */
             /* width: 450px;
             height: 200px; */
             background-size: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            /* border-radius: 10px; */
+            /* margin-bottom: 30px; */
       }
 
       #small_image_slider > h3 {
@@ -632,11 +742,11 @@ body {
             font-size: 16px;
       }
 
-      #content_text > .container_notice > .notice_item > .post > p:first-child {
+      #content_text > .container_notice > .notice_item > .post > a:first-child {
             font-size: 18px;
       }
       
-      #content_text > .container_notice > .notice_item > .post > p:nth-child(2) {
+      #content_text > .container_notice > .notice_item > .post > a:nth-child(2) {
             font-size: 16px;
       }
 
@@ -649,11 +759,11 @@ body {
             font-size: 16px;
       }
 
-      #content_text > .container_news > .news_item > .post > p:first-child {
+      #content_text > .container_news > .news_item > .post > a:first-child {
             font-size: 18px;
       }
       
-      #content_text > .container_news > .news_item > .post > p:nth-child(2) {
+      #content_text > .container_news > .news_item > .post > a:nth-child(2) {
             font-size: 16px;
       }
 }
@@ -696,8 +806,8 @@ body {
             margin: 30px 0 0;
       }
       #content_event > #event_container > .event_item {
-            width: calc(100% - 40px);
-            margin-bottom: 10px;
+            /* width: calc(100% - 40px); */
+            /* margin-bottom: 30px; */
             /* width: 450px;
             height: 200px; */
       }
@@ -817,11 +927,11 @@ body {
             font-size: 15px;
       }
       
-      #content_text > .container_notice > .notice_item > .post > p:first-child {
+      #content_text > .container_notice > .notice_item > .post > a:first-child {
             font-size: 17px;
       }
       
-      #content_text > .container_notice > .notice_item > .post > p:nth-child(2) {
+      #content_text > .container_notice > .notice_item > .post > a:nth-child(2) {
             font-size: 15px;
       }
 
@@ -834,11 +944,11 @@ body {
             font-size: 15px;
       }
       
-      #content_text > .container_news > .news_item > .post > p:first-child {
+      #content_text > .container_news > .news_item > .post > a:first-child {
             font-size: 17px;
       }
       
-      #content_text > .container_news > .news_item > .post > p:nth-child(2) {
+      #content_text > .container_news > .news_item > .post > a:nth-child(2) {
             font-size: 15px;
       }
 }
