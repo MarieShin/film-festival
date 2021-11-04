@@ -96,6 +96,10 @@ ul { list-style: none; }
       font-size: 15px;
 }
 
+#main_header > .gnb_container > .lnb .blind {
+      display: none;
+}
+
 /* active_path, active bar */
 #main_header > .active_path {
       position: fixed;
