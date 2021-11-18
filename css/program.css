@@ -125,11 +125,12 @@ body {
 
     .content_program h3 , .content_program_t h3 {
         font-size: 18px;
+        padding: 20px 0;
     }
 
     .program_container > .film.item {
         width: calc((100% - 40px) / 2);
-        margin: 0 10px;
+        margin: 0 10px 35px;
     }
     
     .program_container > .film.item > .caption > h4 {

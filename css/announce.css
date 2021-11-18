@@ -255,6 +255,7 @@ a {
       #main_aside > ul > li {
             float: left;
             text-align: center;
+            margin-right: 15px;
       }
 
       #main_aside > ul > li > a {

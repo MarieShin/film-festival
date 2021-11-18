@@ -71,6 +71,7 @@ body {
       color: white;
       text-align: center;
       text-shadow: 5px 2px 2px gray;
+      display: none;
 }
 
 /* 슬라이더 이미지 위에 올라오는 텍스트 */
@@ -94,14 +95,17 @@ body {
 #big_image_slider .swiper-slide-active .slide-title {
       -webkit-animation: flipInX 1s;
       animation: flipInX 1s;
+      display: block;
 }
 #big_image_slider .swiper-slide-active.slide2  .slide-title {
       -webkit-animation: swing 1s;
       animation: swing 1s;
+      display: block;
 }
 #big_image_slider .swiper-slide-active.slide3  .slide-title {
       -webkit-animation: bounce 1s;
       animation: bounce 1s;
+      display: block;
 }
 
 
